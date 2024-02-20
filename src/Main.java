@@ -1,10 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(getSubtraction(5, -798889927));
+        System.out.println(getSubtraction(5, 2));
+        System.out.println(getSubtraction(5, -5));
+
     }
 
-    public static double getSubtraction(double n1, double n2) {
+    public static double getSubtraction(float n1, float n2) {
         return n1 - n2;
     }
 }
