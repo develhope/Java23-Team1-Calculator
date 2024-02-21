@@ -6,7 +6,7 @@ public class Main {
 
     }
 
-    public static double getSubtraction(float n1, float n2) {
+    public static int getSubtraction(int n1, int n2) {
         return n1 - n2;
     }
 }
