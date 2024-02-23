@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+      
+        System.out.println("Type of operation is = " + checkOperator("15 + 89"));
+        System.out.println("Type of operation is = " + checkOperator("15 / 89"));
+        System.out.println("Type of operation is = " + checkOperator("15 * 89"));
+        System.out.println("Type of operation is = " + checkOperator("15 - 89"));
+        System.out.println("Type of operation is = " + checkOperator("15 ^ 89"));
+        System.out.println("Type of operation is = " + checkOperator("15 & 89"));
+
 
         System.out.println(getSum(8, 11));
         System.out.println(getSum(-6, -4));
@@ -17,6 +25,26 @@ public class Main {
         int result = getPow(0, 0);
         System.out.println("result: " + result);
 
+    }
+  
+   public static String checkOperator(String operation) {
+        if (operation.contains("+")) {
+            return "Sum";
+        }
+        if (operation.contains("-")) {
+            return "Subtraction";
+        }
+        if (operation.contains("/")) {
+            return "Division";
+        }
+        if (operation.contains("*")) {
+            return "Multiplication";
+        }
+        if (operation.contains("^")) {
+            return "Exponents";
+        } else {
+            return "This is not an operation";
+        }
     }
 
     public static int getSum(int n1, int n2) {
