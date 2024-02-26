@@ -25,6 +25,10 @@ public class Main {
         int result = getPow(0, 0);
         System.out.println("result: " + result);
 
+        int [] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.print(genericSum(array));
+
+
     }
   
    public static String checkOperator(String operation) {
@@ -74,6 +78,13 @@ public class Main {
             result *= base;
         }
         return result;
+    }
+    public static int genericSum (int [] addendi) {
+        int sum = 0;
+        for (int i = 0; i < addendi.length; i++) {
+            sum = sum + addendi[i];
+        }
+        return (sum);
     }
 }
 
