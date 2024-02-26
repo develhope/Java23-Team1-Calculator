@@ -74,6 +74,18 @@ public class Main {
             result *= base;
         }
         return result;
+
+        
     }
+
+    public static int getGenericSubtraction(int[] addendi) {
+        int result = addendi[0];
+        for (int i = 1; i < addendi.length; i++) {
+            result -= addendi[i];
+        }
+        return result;
+    }
+    
+
 }
 
