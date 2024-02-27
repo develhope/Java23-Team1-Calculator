@@ -204,5 +204,15 @@ public class Main {
         }
         return result;
     }
+
+    public static int getMultiplicationArray(int[] array) {
+        int arrayMultiplication = 1;
+        for (int i = 0; i < array.length; i++) {
+            arrayMultiplication = arrayMultiplication * array[i];
+        }
+        return arrayMultiplication;
+    }
 }
+
+
 
