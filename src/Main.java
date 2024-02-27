@@ -195,15 +195,18 @@ public class Main {
         return n1 * n2;
     }
 
-    public static int[] getDivision(int div1, int div2) {
-        int[] resultERest = new int[2];
-        resultERest[0] = div1 / div2;
-        resultERest[1] = div1 % div2;
-        return (resultERest);
+    public static int getDivision (int div1, int div2) {
+        return (div1 / div2);
     }
-
-    public static boolean isOdd(int number) {
-        return number % 2 == 1;
+    public static int getRest(int div1, int div2) {
+        return (div1 % div2);
+    }
+    public static void isOdd (int number) {
+        if (number % 2 == 1) {
+            System.out.println(number + " is odd.");
+        } else {
+            System.out.println (number + " is even.");
+        }
     }
 
     public static int getPow(int base, int exponent) {
