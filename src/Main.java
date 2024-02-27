@@ -6,35 +6,20 @@ public class Main {
 
         String input = "78 + 65";
         String input2 = "78 * 65";
-//        String input3 = "78 / 65";
+        String input3 = "78 / 65";
         String input4 = "78 - 65";
         String input5 = "2 ^ 5";
-         String input6 = "78 & 65";
+        String input6 = "78 & 65";
         removeSpace(findNumAndOperator(input));
         checkOperator(removeSpace(findNumAndOperator(input)));
 
         System.out.println("Operation is: " + input + "\n the result is = " + doOperation(input));
         System.out.println("Operation is: " + input2 + "\n the result is = " + doOperation(input2));
+        System.out.println("Operation is: " + input3 + "\n the result is = " + doOperation(input3));
         System.out.println("Operation is: " + input4 + "\n the result is = " + doOperation(input4));
         System.out.println("Operation is: " + input5 + "\n the result is = " + doOperation(input5));
         System.out.println("Operation is: " + input6 + "\n the result is = " + doOperation(input6));
 
-
-//        System.out.println(getSum(8, 11));
-//        System.out.println(getSum(-6, -4));
-//        System.out.println(getSum(-12, 10));
-//        System.out.println(getSum(38, 45));
-//        System.out.println(getSum(0, -6));
-//        System.out.println(getSubtraction(5, 2));
-//        System.out.println(getSubtraction(5, -5));
-//        System.out.println(getMultiplication(-5, -35));
-//        System.out.println(getMultiplication(8, -10));
-//        System.out.println(getDivision(133, 3)[0]);
-//        System.out.println(getDivision(133, 3)[1]);
-//        System.out.println(isOdd(5));
-//
-//        int result = getPow(0, 0);
-//        System.out.println("result: " + result);
 
     }
 
@@ -168,6 +153,7 @@ public class Main {
                         result = getMultiplication(n1, n2);
                         break;
                     case "Division":
+                        result = getDivision(n1, n2);
                         break;
                     case "Exponents":
                         result = getPow(n1, n2);
@@ -195,17 +181,19 @@ public class Main {
         return n1 * n2;
     }
 
-    public static int getDivision (int div1, int div2) {
+    public static int getDivision(int div1, int div2) {
         return (div1 / div2);
     }
+
     public static int getRest(int div1, int div2) {
         return (div1 % div2);
     }
-    public static void isOdd (int number) {
+
+    public static void isOdd(int number) {
         if (number % 2 == 1) {
             System.out.println(number + " is odd.");
         } else {
-            System.out.println (number + " is even.");
+            System.out.println(number + " is even.");
         }
     }
 
