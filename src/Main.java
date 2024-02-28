@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -212,7 +213,11 @@ public class Main {
         }
         return arrayMultiplication;
     }
+    public static int getSumArray(int [] addendi) {
+        int sum = 0;
+        for (int i = 0; i < addendi.length; i++) {
+            sum = sum + addendi[i];
+        }
+        return (sum);
+    }
 }
-
-
-
