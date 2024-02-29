@@ -19,7 +19,6 @@ public class Main {
         System.out.println("Operation is: " + input5 + "\n the result is = " + doOperation(input5));
         System.out.println("Operation is: " + input6 + "\n the result is = " + doOperation(input6));
 
-
     }
 
     public static String[] findNumAndOperator(String operation) {
@@ -182,6 +181,19 @@ public class Main {
 
     public static int getDivision(int div1, int div2) {
         return (div1 / div2);
+    }
+
+    public static int getDivisionArray(int[] operation) {
+        int result = operation[0];
+        for (int i = 1; i < operation.length; i++) {
+            try {
+                int error = operation[i] / 0;
+            } catch (ArithmeticException e) {
+                System.out.println("There is an error: " + e);
+            }
+            result /= operation [i];
+        }
+        return result;
     }
 
     public static int getRest(int div1, int div2) {
