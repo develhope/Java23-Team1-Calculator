@@ -1,5 +1,3 @@
-
-import java.util.Arrays;
 import java.util.Objects;
 
 public class Main {
@@ -206,6 +204,15 @@ public class Main {
         return result;
     }
 
+    public static int getSubtractionArray(int[] operators) {
+        int subtraction = operators[0];
+        for (int i = 1; i < operators.length; i++) {
+            subtraction = subtraction - operators[i];
+        }
+        return subtraction;
+    }
+
+
     public static int getMultiplicationArray(int[] array) {
         int arrayMultiplication = 1;
         for (int i = 0; i < array.length; i++) {
@@ -213,7 +220,8 @@ public class Main {
         }
         return arrayMultiplication;
     }
-    public static int getSumArray(int [] addendi) {
+
+    public static int getSumArray(int[] addendi) {
         int sum = 0;
         for (int i = 0; i < addendi.length; i++) {
             sum = sum + addendi[i];
