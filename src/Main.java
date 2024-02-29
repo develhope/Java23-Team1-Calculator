@@ -184,7 +184,7 @@ public class Main {
         return (div1 / div2);
     }
 
-    public static int genericDivision(int[] operation) {
+    public static int getDivisionArray(int[] operation) {
         int result = operation[0];
         for (int i = 1; i < operation.length; i++) {
             try {
